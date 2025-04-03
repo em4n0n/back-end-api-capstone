@@ -10,7 +10,7 @@ class Booking(models.Model):
     def __str__(self):
         return self.name
     
-class Menu(models.Model):
+class MenuItem(models.Model):
     id = models.IntegerField(primary_key=True)
     title = models.CharField(max_length=255)
     price = models.FloatField()
