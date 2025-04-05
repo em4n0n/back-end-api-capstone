@@ -17,4 +17,3 @@ class SingleMenuItemView(generics.RetrieveUpdateDestroyAPIView):
 class BookingViewset(ModelViewSet):
     queryset= Booking.objects.all()
     serializer_class = BookingSerializer
-    permission_classes = [permissions.IsAuthenticated]
